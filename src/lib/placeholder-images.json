@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-mockup",
+      "description": "Mockup of the bible study app on a tablet, next to an open book.",
+      "imageUrl": "https://images.unsplash.com/photo-1707836916010-3c4ad261936c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhcHAlMjBtb2NrdXB8ZW58MHx8fHwxNzY4MjM1ODE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "app mockup"
+    },
+    {
+      "id": "abraham",
+      "description": "Sober portrait of Abraham.",
+      "imageUrl": "https://images.unsplash.com/photo-1655276920835-0d9ffa612fc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwb3J0cmFpdCUyMGRlc2VydHxlbnwwfHx8fDE3NjgyNjQxMjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portrait desert"
+    },
+    {
+      "id": "moise",
+      "description": "Sober portrait of Moses.",
+      "imageUrl": "https://images.unsplash.com/photo-1673118857471-34bedcb90ee7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwb3J0cmFpdCUyMG1vdW50YWlufGVufDB8fHx8MTc2ODI2NDEyMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portrait mountain"
+    },
+    {
+      "id": "isaie",
+      "description": "Sober portrait of Isaiah.",
+      "imageUrl": "https://images.unsplash.com/photo-1758270703526-c846790aaff7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwb3J0cmFpdCUyMHNjcm9sbHxlbnwwfHx8fDE3NjgyNjQxMjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portrait scroll"
+    },
+    {
+      "id": "daniel",
+      "description": "Sober portrait of Daniel.",
+      "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwb3J0cmFpdCUyMG1hbnxlbnwwfHx8fDE3NjgyNjQxMjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "portrait man"
+    },
+    {
+      "id": "preview-screenshot",
+      "description": "Screenshot of a study session in the app.",
+      "imageUrl": "https://images.unsplash.com/photo-1605108222700-0d605d9ebafe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcHAlMjBpbnRlcmZhY2V8ZW58MHx8fHwxNzY4MTY4NDYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "app interface"
+    }
+  ]
 }
