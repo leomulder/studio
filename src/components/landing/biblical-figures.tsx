@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const figures = [
@@ -41,7 +40,7 @@ export function BiblicalFigures() {
           {figures.map((figure) => {
             const image = PlaceHolderImages.find((img) => img.id === figure.imageId);
             return (
-              <Card key={figure.name} className="overflow-hidden group">
+              <div key={figure.name} className="overflow-hidden group">
                 <div className="relative h-64 w-full">
                   {image && (
                     <Image
@@ -53,11 +52,7 @@ export function BiblicalFigures() {
                     />
                   )}
                 </div>
-                <CardContent className="p-4 text-center">
-                  <h3 className="font-headline text-xl">{figure.name}</h3>
-                  <p className="text-sm text-muted-foreground">{figure.description}</p>
-                </CardContent>
-              </Card>
+              </div>
             );
           })}
         </div>
