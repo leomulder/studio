@@ -12,17 +12,6 @@ export function Hero() {
           Patriarches et Prophètes
           <span className="block text-primary">expliqués verset par verset</span>
         </h1>
-        <p className="mt-6 max-w-2xl mx-auto text-lg leading-8 text-muted-foreground">
-          Un cadre clair pour comprendre la Bible, sans se perdre.
-        </p>
-        <div className="mt-10 flex items-center justify-center gap-x-6">
-          <a href="#tarifs">
-            <Button size="lg">Voir les options d’accès</Button>
-          </a>
-        </div>
-        <p className="mt-4 text-sm text-muted-foreground">
-          Paiement unique • Accès immédiat • Sans abonnement
-        </p>
 
         {heroImage && (
           <div className="mt-12">
@@ -37,6 +26,18 @@ export function Hero() {
             />
           </div>
         )}
+
+        <p className="mt-6 max-w-2xl mx-auto text-lg leading-8 text-muted-foreground">
+          Un cadre clair pour comprendre la Bible, sans se perdre.
+        </p>
+        <div className="mt-10 flex items-center justify-center gap-x-6">
+          <a href="#tarifs">
+            <Button size="lg">Voir les options d’accès</Button>
+          </a>
+        </div>
+        <p className="mt-4 text-sm text-muted-foreground">
+          Paiement unique • Accès immédiat • Sans abonnement
+        </p>
       </div>
     </section>
   );
