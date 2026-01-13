@@ -1,4 +1,5 @@
 import { Hero } from '@/components/landing/hero';
+import { Authority } from '@/components/landing/authority';
 import { Benefits } from '@/components/landing/benefits';
 import { ProblemSolution } from '@/components/landing/problem-solution';
 import { Contents } from '@/components/landing/contents';
@@ -19,6 +20,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
+        <Authority />
         <Benefits />
         <ProblemSolution />
         <Contents />
