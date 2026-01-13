@@ -25,18 +25,16 @@ export function Hero() {
         </p>
 
         {heroImage && (
-          <div className="mt-12 flow-root">
-            <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
-              <Image
-                src={heroImage.imageUrl}
-                alt={heroImage.description}
-                width={1000}
-                height={700}
-                className="rounded-md shadow-2xl ring-1 ring-gray-900/10"
-                data-ai-hint={heroImage.imageHint}
-                priority
-              />
-            </div>
+          <div className="mt-12">
+            <Image
+              src={heroImage.imageUrl}
+              alt={heroImage.description}
+              width={1000}
+              height={700}
+              className="rounded-lg shadow-2xl"
+              data-ai-hint={heroImage.imageHint}
+              priority
+            />
           </div>
         )}
       </div>
