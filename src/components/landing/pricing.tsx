@@ -52,7 +52,7 @@ export function Pricing() {
             </CardFooter>
           </Card>
 
-          <Card className="relative flex flex-col h-full border-2 border-primary shadow-2xl">
+          <Card className="relative flex flex-col h-full border-2 border-primary shadow-2xl scale-105">
             <Badge className="absolute -top-3 left-1/2 -translate-x-1/2">Recommandé</Badge>
             <CardHeader>
               <CardTitle>Accès intégral</CardTitle>
@@ -77,7 +77,7 @@ export function Pricing() {
             </CardFooter>
           </Card>
         </div>
-        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
+        <div className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
           <div className="flex items-center gap-2">
             <ShieldCheck className="h-4 w-4"/>
             Garantie 15 jours
