@@ -11,7 +11,7 @@ export function Preview() {
           <h2 className="font-headline text-3xl md:text-4xl">
             Aperçu d’une séance
           </h2>
-          <p className="mt-4 text-muted-foreground md:text-lg">
+          <p className="mt-4 text-base text-muted-foreground md:text-lg">
             Voici exactement ce que vous verrez. Simple, clair et sans distraction.
           </p>
         </div>
@@ -22,8 +22,8 @@ export function Preview() {
                 <Image
                   src={previewImage.imageUrl}
                   alt={previewImage.description}
-                  width={400}
-                  height={267}
+                  width={200}
+                  height={133}
                   className="rounded-md shadow-2xl ring-1 ring-gray-900/10"
                   data-ai-hint={previewImage.imageHint}
                 />

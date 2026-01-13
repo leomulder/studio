@@ -38,23 +38,20 @@ export function HowItWorks() {
           <h2 className="font-headline text-3xl md:text-4xl">
             Comment ça marche ?
           </h2>
-          <p className="mt-4 text-muted-foreground md:text-lg">
+          <p className="mt-4 text-base text-muted-foreground md:text-lg">
             Un processus simple en 4 étapes pour une expérience fluide.
           </p>
         </div>
-        <div className="relative mt-12">
-          <div className="absolute left-1/2 top-4 hidden h-full w-px bg-border md:block" />
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {steps.map((step, index) => (
-              <div key={step.name} className="relative flex flex-col items-center text-center">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-card border-2 border-primary text-primary">
-                  <step.icon className="h-6 w-6" />
-                </div>
-                <h3 className="mt-4 font-semibold">{step.name}</h3>
-                <p className="mt-1 text-sm text-muted-foreground">{step.description}</p>
+        <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
+          {steps.map((step, index) => (
+            <div key={step.name} className="flex flex-col items-center text-center">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-card border-2 border-primary text-primary">
+                <step.icon className="h-6 w-6" />
               </div>
-            ))}
-          </div>
+              <h3 className="mt-4 font-semibold">{step.name}</h3>
+              <p className="mt-1 text-sm text-muted-foreground">{step.description}</p>
+            </div>
+          ))}
         </div>
         <p className="mt-12 text-center text-muted-foreground">
           Une séance prend 10 à 20 minutes, selon vous.

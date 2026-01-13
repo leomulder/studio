@@ -21,7 +21,7 @@ export function Pricing() {
           <h2 className="font-headline text-3xl md:text-4xl">
             Choisissez votre accès
           </h2>
-          <p className="mt-4 text-muted-foreground md:text-lg">
+          <p className="mt-4 text-base text-muted-foreground md:text-lg">
             Un investissement unique pour une compréhension qui dure toute une vie.
           </p>
         </div>
@@ -77,7 +77,7 @@ export function Pricing() {
             </CardFooter>
           </Card>
         </div>
-        <div className="mt-8 flex items-center justify-center gap-x-6 text-sm text-muted-foreground">
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
           <div className="flex items-center gap-2">
             <ShieldCheck className="h-4 w-4"/>
             Garantie 15 jours

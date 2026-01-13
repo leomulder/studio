@@ -32,7 +32,7 @@ export function Contents() {
           <h2 className="font-headline text-3xl md:text-4xl">
             Ce que contient l’expérience
           </h2>
-          <p className="mt-4 text-muted-foreground md:text-lg">
+          <p className="mt-4 text-base text-muted-foreground md:text-lg">
             Un espace de lecture pensé pour durer, avec tous les outils nécessaires.
           </p>
         </div>

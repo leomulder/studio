@@ -33,7 +33,7 @@ export function BiblicalFigures() {
           <h2 className="font-headline text-3xl md:text-4xl">
             Rencontrez les figures bibliques
           </h2>
-          <p className="mt-4 text-muted-foreground md:text-lg">
+          <p className="mt-4 text-base text-muted-foreground md:text-lg">
             Marchez aux côtés des patriarches et des prophètes, et comprenez leur rôle dans le plan divin.
           </p>
         </div>

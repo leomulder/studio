@@ -27,7 +27,7 @@ export function Testimonials() {
           <h2 className="font-headline text-3xl md:text-4xl">
             Ce qu’en disent les lecteurs
           </h2>
-          <p className="mt-4 text-muted-foreground md:text-lg">
+          <p className="mt-4 text-base text-muted-foreground md:text-lg">
             Des retours authentiques de personnes qui utilisent l'étude.
           </p>
         </div>
@@ -35,7 +35,7 @@ export function Testimonials() {
           {testimonials.map((testimonial) => (
             <Card key={testimonial.name}>
               <CardContent className="p-6">
-                <blockquote className="text-muted-foreground">
+                <blockquote className="text-base text-muted-foreground">
                   “{testimonial.quote}”
                 </blockquote>
                 <div className="mt-4 flex items-center gap-4">

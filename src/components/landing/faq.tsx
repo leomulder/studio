@@ -40,8 +40,8 @@ export function Faq() {
         <Accordion type="single" collapsible className="mt-12 w-full">
           {faqs.map((faq, index) => (
             <AccordionItem value={`item-${index}`} key={index}>
-              <AccordionTrigger className="text-left font-medium">{faq.question}</AccordionTrigger>
-              <AccordionContent className="text-muted-foreground">{faq.answer}</AccordionContent>
+              <AccordionTrigger className="text-left font-medium text-base">{faq.question}</AccordionTrigger>
+              <AccordionContent className="text-base text-muted-foreground">{faq.answer}</AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
