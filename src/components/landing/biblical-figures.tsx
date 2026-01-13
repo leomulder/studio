@@ -41,7 +41,7 @@ export function BiblicalFigures() {
             const image = PlaceHolderImages.find((img) => img.id === figure.imageId);
             return (
               <div key={figure.name} className="overflow-hidden group">
-                <div className="relative h-64 w-full">
+                <div className="relative h-96 w-full">
                   {image && (
                     <Image
                       src={image.imageUrl}
