@@ -28,7 +28,8 @@ export function Hero() {
         )}
 
         <p className="mt-6 max-w-2xl mx-auto text-lg leading-8 text-muted-foreground">
-          Un cadre clair pour comprendre la Bible, sans se perdre.
+          Explorez, verset par verset, plus de 2 300 passages bibliques expliqués avec une clarté rare.
+          Redécouvrez le sens des récits des Patriarches, la parole des Prophètes, et les vérités durables transmises au peuple de Dieu.
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <a href="#tarifs">
