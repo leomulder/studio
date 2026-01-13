@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent } from '@/components/ui/card';
 
 const testimonials = [
@@ -6,16 +6,19 @@ const testimonials = [
     name: 'Anne',
     details: '34, Lyon',
     quote: 'Je sais enfin où je suis dans le récit. C’est la première fois que je ne me sens pas perdue après la Genèse.',
+    imageUrl: 'https://i.postimg.cc/4yfJkNWB/Captura-de-Tela-2026-01-12-a-s-22-38-09.png',
   },
   {
     name: 'Julien',
     details: '45, Paris',
     quote: 'La possibilité de lire sans pression, à mon rythme, change tout. Pas de culpabilité si je saute une semaine.',
+    imageUrl: 'https://i.postimg.cc/KYtF1gVR/Captura-de-Tela-2026-01-12-a-s-22-39-17.png',
   },
   {
     name: 'Claire',
     details: '28, Lille',
     quote: 'J’apprécie la sobriété. Pas de vidéos, pas de longs sermons, juste le texte et de quoi le comprendre. Parfait pour moi.',
+    imageUrl: 'https://i.postimg.cc/dtXKnBcg/Captura-de-Tela-2026-01-12-a-s-22-40-20.png',
   },
 ];
 
@@ -40,6 +43,7 @@ export function Testimonials() {
                 </blockquote>
                 <div className="mt-4 flex items-center gap-4">
                   <Avatar>
+                    <AvatarImage src={testimonial.imageUrl} alt={testimonial.name} />
                     <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                   </Avatar>
                   <div>
