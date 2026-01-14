@@ -52,7 +52,7 @@ export function Pricing() {
             </CardFooter>
           </Card>
 
-          <Card className="relative flex flex-col h-full border-2 border-primary shadow-2xl scale-105">
+          <Card className="relative flex flex-col h-full border-2 border-primary shadow-2xl lg:scale-105">
             <Badge className="absolute -top-3 left-1/2 -translate-x-1/2">Recommandé</Badge>
             <CardHeader>
               <CardTitle>Accès intégral</CardTitle>
