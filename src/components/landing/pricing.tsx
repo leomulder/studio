@@ -3,6 +3,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { Check, ShieldCheck, Lock, Rocket } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
+import Link from 'next/link';
 
 const includedFeatures = [
   'Accès intégral aux Patriarches',
@@ -48,7 +49,9 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button variant="outline" className="w-full">Choisir cette option</Button>
+              <a href="https://www.ggcheckout.com/checkout/v2/VuYwXsrqyPVviXi5Id1k" className="w-full">
+                <Button variant="outline" className="w-full">Choisir cette option</Button>
+              </a>
             </CardFooter>
           </Card>
 
