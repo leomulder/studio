@@ -76,7 +76,9 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button className="w-full">Je choisis l'accès intégral</Button>
+              <a href="https://www.ggcheckout.com/checkout/v2/jtaxwAmIDFzGRqMcRoPd" className="w-full">
+                <Button className="w-full">Je choisis l'accès intégral</Button>
+              </a>
             </CardFooter>
           </Card>
         </div>
