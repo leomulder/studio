@@ -33,7 +33,7 @@ export function Pricing() {
             </CardHeader>
             <CardContent className="flex-1">
               <div className="flex items-baseline gap-2">
-                <span className="text-4xl font-bold tracking-tight">7,90€</span>
+                <span className="text-4xl font-bold tracking-tight">11,90€</span>
                 <span className="text-sm font-semibold leading-6 tracking-wide text-muted-foreground">Paiement unique</span>
               </div>
               <ul className="mt-6 space-y-3 text-sm leading-6 text-muted-foreground">
@@ -60,7 +60,7 @@ export function Pricing() {
             </CardHeader>
             <CardContent className="flex-1">
               <div className="flex items-baseline gap-2">
-                <span className="text-4xl font-bold tracking-tight">11,90€</span>
+                <span className="text-4xl font-bold tracking-tight">21,90€</span>
                 <span className="text-sm font-semibold leading-6 tracking-wide text-muted-foreground">Paiement unique</span>
               </div>
               <ul className="mt-6 space-y-3 text-sm leading-6 text-foreground">
