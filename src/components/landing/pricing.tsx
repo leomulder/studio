@@ -49,7 +49,7 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter>
-              <a href="https://www.ggcheckout.com/checkout/v2/VuYwXsrqyPVviXi5Id1k" className="w-full">
+              <a href="https://pay.hotmart.com/X99498922F?off=0lf0vsdh&checkoutMode=10" className="w-full">
                 <Button variant="outline" className="w-full">Choisir cette option</Button>
               </a>
             </CardFooter>
@@ -76,7 +76,7 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter>
-              <a href="https://www.ggcheckout.com/checkout/v2/jtaxwAmIDFzGRqMcRoPd" className="w-full">
+              <a href="https://pay.hotmart.com/X99498922F?off=dmbffmon&checkoutMode=10" className="w-full">
                 <Button className="w-full">Je choisis l'accès intégral</Button>
               </a>
             </CardFooter>
