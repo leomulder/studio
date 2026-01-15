@@ -14,13 +14,13 @@ export function Hero() {
         </h1>
 
         {heroImage && (
-          <div className="mt-12">
+          <div className="mt-12 flex justify-center">
             <Image
               src={heroImage.imageUrl}
               alt={heroImage.description}
-              width={1200}
-              height={675}
-              className="rounded-lg shadow-2xl w-full h-auto"
+              width={1000}
+              height={562}
+              className="rounded-lg shadow-2xl w-full h-auto max-w-5xl"
               data-ai-hint={heroImage.imageHint}
               priority
             />
