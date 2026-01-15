@@ -21,7 +21,7 @@ export function Hero() {
               alt={heroImage.description}
               width={1000}
               height={562}
-              className="rounded-lg shadow-2xl w-full h-auto max-w-xl"
+              className="rounded-lg shadow-2xl w-full h-auto max-w-2xl"
               data-ai-hint={heroImage.imageHint}
               priority
             />
@@ -29,8 +29,8 @@ export function Hero() {
         )}
 
         <p className="mt-8 max-w-3xl mx-auto text-lg leading-8 text-muted-foreground sm:text-xl sm:leading-9">
-          Explorez, verset par verset, plus de 2 300 passages bibliques expliqués avec une clarté rare.
-          Redécouvrez le sens des récits des Patriarches, la parole des Prophètes, et les vérités durables transmises au peuple de Dieu.
+          Explorez, <strong className="font-semibold text-primary">verset par verset</strong>, plus de <strong className="font-semibold text-primary">2 300</strong> passages bibliques expliqués avec une clarté rare.
+          Redécouvrez le sens des récits des <strong className="font-semibold text-primary">Patriarches</strong>, la parole des <strong className="font-semibold text-primary">Prophètes</strong>, et les vérités durables transmises au peuple de <strong className="font-semibold text-primary">Dieu</strong>.
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <a href="#tarifs">
