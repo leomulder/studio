@@ -7,6 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+import { cn } from '@/lib/utils';
 
 export function Preview() {
   const previewImages = [
@@ -14,6 +15,8 @@ export function Preview() {
     PlaceHolderImages.find((img) => img.id === 'preview-2'),
     PlaceHolderImages.find((img) => img.id === 'preview-3'),
   ].filter(Boolean);
+
+  const arrowClasses = "bg-background/50 text-foreground border-foreground/50 hover:bg-background/80";
 
   return (
     <section className="py-16 sm:py-24">
@@ -52,8 +55,8 @@ export function Preview() {
                   )
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="hidden sm:flex" />
-              <CarouselNext className="hidden sm:flex" />
+              <CarouselPrevious className={cn("hidden sm:flex", arrowClasses)} />
+              <CarouselNext className={cn("hidden sm:flex", arrowClasses)} />
             </Carousel>
           </div>
         </div>
