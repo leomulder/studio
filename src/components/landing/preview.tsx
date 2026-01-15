@@ -24,7 +24,7 @@ export function Preview() {
                   alt={previewImage.description}
                   width={200}
                   height={133}
-                  className="rounded-md shadow-2xl ring-1 ring-gray-900/10"
+                  className="rounded-md shadow-2xl ring-1 ring-gray-900/10 w-full h-auto"
                   data-ai-hint={previewImage.imageHint}
                 />
               </div>
