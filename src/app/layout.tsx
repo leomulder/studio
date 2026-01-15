@@ -3,6 +3,20 @@ import Script from 'next/script';
 import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
 import { cn } from '@/lib/utils';
+import { Playfair_Display, PT_Sans } from 'next/font/google';
+
+const playfairDisplay = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair-display',
+  display: 'swap',
+});
+
+const ptSans = PT_Sans({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-pt-sans',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'Paroles Claires | Étude biblique approfondie',
@@ -15,11 +29,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className="!scroll-smooth">
+    <html lang="fr" className={cn('!scroll-smooth', playfairDisplay.variable, ptSans.variable)}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
         <Script id="utmify-pixel-config" strategy="afterInteractive">
           {`window.pixelId = "6968210716f60bda1549eed9";`}
         </Script>
@@ -27,6 +38,7 @@ export default function RootLayout({
           id="utmify-pixel-script"
           src="https://cdn.utmify.com.br/scripts/pixel/pixel.js"
           strategy="afterInteractive"
+          async
         />
         <Script
           id="utmify-utms-script"
@@ -34,6 +46,7 @@ export default function RootLayout({
           data-utmify-prevent-xcod-sck
           data-utmify-prevent-subids
           strategy="afterInteractive"
+          async
         />
       </head>
       <body className={cn('font-body antialiased')}>
