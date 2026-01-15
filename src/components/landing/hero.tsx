@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { BadgeCheck, Rocket, ShieldCheck } from 'lucide-react';
 
 export function Hero() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-mockup');
@@ -20,25 +21,36 @@ export function Hero() {
               alt={heroImage.description}
               width={1000}
               height={562}
-              className="rounded-lg shadow-2xl w-full h-auto max-w-2xl"
+              className="rounded-lg shadow-2xl w-full h-auto max-w-xl"
               data-ai-hint={heroImage.imageHint}
               priority
             />
           </div>
         )}
 
-        <p className="mt-6 max-w-2xl mx-auto text-base leading-7 text-muted-foreground sm:text-lg sm:leading-8">
+        <p className="mt-8 max-w-3xl mx-auto text-lg leading-8 text-muted-foreground sm:text-xl sm:leading-9">
           Explorez, verset par verset, plus de 2 300 passages bibliques expliqués avec une clarté rare.
           Redécouvrez le sens des récits des Patriarches, la parole des Prophètes, et les vérités durables transmises au peuple de Dieu.
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <a href="#tarifs">
-            <Button size="lg" className="px-6 py-5 text-base sm:text-lg">Voir les options d’accès</Button>
+            <Button size="lg" className="px-8 py-6 text-lg sm:text-xl">Voir les options d’accès</Button>
           </a>
         </div>
-        <p className="mt-4 text-sm text-muted-foreground">
-          Paiement unique • Accès immédiat • Sans abonnement
-        </p>
+        <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-3 text-sm text-muted-foreground">
+          <div className="flex items-center gap-2">
+            <ShieldCheck className="h-4 w-4 text-primary" />
+            <span>Paiement unique</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Rocket className="h-4 w-4 text-primary" />
+            <span>Accès immédiat</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <BadgeCheck className="h-4 w-4 text-primary" />
+            <span>Sans abonnement</span>
+          </div>
+        </div>
       </div>
     </section>
   );
