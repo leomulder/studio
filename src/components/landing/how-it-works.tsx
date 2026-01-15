@@ -38,11 +38,11 @@ export function HowItWorks() {
           <h2 className="font-headline text-3xl md:text-4xl">
             Comment ça marche ?
           </h2>
-          <p className="mt-4 text-base text-muted-foreground md:text-lg">
+          <p className="mt-4 text-base text-muted-foreground md:text-lg max-w-2xl mx-auto">
             Un processus simple en 4 étapes pour une expérience fluide.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((step, index) => (
             <div key={step.name} className="flex flex-col items-center text-center">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-card border-2 border-primary text-primary">

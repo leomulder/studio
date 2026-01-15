@@ -31,7 +31,7 @@ export function Benefits() {
           <h2 className="font-headline text-3xl md:text-4xl">
             Ce que cette étude apporte
           </h2>
-          <p className="mt-4 text-base text-muted-foreground md:text-lg">
+          <p className="mt-4 text-base text-muted-foreground md:text-lg max-w-2xl mx-auto">
             Des bénéfices concrets pour une lecture renouvelée.
           </p>
         </div>

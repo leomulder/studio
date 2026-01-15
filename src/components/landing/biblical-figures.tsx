@@ -36,12 +36,12 @@ export function BiblicalFigures() {
             Marchez aux côtés des patriarches et des prophètes, et comprenez leur rôle dans le plan divin.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 sm:gap-6">
           {figures.map((figure) => {
             const image = PlaceHolderImages.find((img) => img.id === figure.imageId);
             return (
               <div key={figure.name} className="overflow-hidden group">
-                <div className="relative h-96 w-full">
+                <div className="relative h-80 sm:h-96 w-full">
                   {image && (
                     <Image
                       src={image.imageUrl}

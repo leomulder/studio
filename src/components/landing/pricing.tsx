@@ -22,11 +22,11 @@ export function Pricing() {
           <h2 className="font-headline text-3xl md:text-4xl">
             Choisissez votre accès
           </h2>
-          <p className="mt-4 text-base text-muted-foreground md:text-lg">
+          <p className="mt-4 text-base text-muted-foreground md:text-lg max-w-2xl mx-auto">
             Un investissement unique pour une compréhension qui dure toute une vie.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start max-w-4xl mx-auto">
+        <div className="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start max-w-sm sm:max-w-4xl mx-auto">
           <Card className="flex flex-col h-full">
             <CardHeader>
               <CardTitle>Juste les Patriarches</CardTitle>
@@ -82,7 +82,7 @@ export function Pricing() {
             </CardFooter>
           </Card>
         </div>
-        <div className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
+        <div className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-4 text-sm text-muted-foreground">
           <div className="flex items-center gap-2">
             <ShieldCheck className="h-4 w-4"/>
             Garantie 15 jours

@@ -8,13 +8,13 @@ export function Hero() {
   return (
     <section className="py-16 sm:py-24">
       <div className="container text-center">
-        <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-6xl md:text-7xl">
+        <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
           Patriarches et Prophètes
           <span className="block text-primary">expliqués verset par verset</span>
         </h1>
 
         {heroImage && (
-          <div className="mt-12 flex justify-center">
+          <div className="mt-10 flex justify-center">
             <Image
               src={heroImage.imageUrl}
               alt={heroImage.description}
@@ -33,7 +33,7 @@ export function Hero() {
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <a href="#tarifs">
-            <Button size="lg">Voir les options d’accès</Button>
+            <Button size="lg" className="px-6 py-5 text-base sm:text-lg">Voir les options d’accès</Button>
           </a>
         </div>
         <p className="mt-4 text-sm text-muted-foreground">

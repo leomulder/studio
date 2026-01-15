@@ -30,7 +30,7 @@ export function Testimonials() {
           <h2 className="font-headline text-3xl md:text-4xl">
             Ce qu’en disent les lecteurs
           </h2>
-          <p className="mt-4 text-base text-muted-foreground md:text-lg">
+          <p className="mt-4 text-base text-muted-foreground md:text-lg max-w-2xl mx-auto">
             Des retours authentiques de personnes qui utilisent l'étude.
           </p>
         </div>

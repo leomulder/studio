@@ -21,16 +21,16 @@ export function Authority() {
                 alt={authorImage.description}
                 width={600}
                 height={800}
-                className="rounded-lg object-cover w-full h-auto max-w-sm mx-auto"
+                className="rounded-lg object-cover w-full h-auto max-w-xs sm:max-w-sm mx-auto"
                 data-ai-hint={authorImage.imageHint}
               />
             )}
           </div>
-          <div>
+          <div className="text-center md:text-left">
             <h2 className="font-headline text-3xl md:text-4xl leading-tight">
               Une étude conçue par un enseignant en théologie
             </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
+            <p className="mt-4 text-base md:text-lg text-muted-foreground">
               Ce parcours a été conçu et structuré par un théologien engagé depuis plus de vingt ans dans l’enseignement biblique. Son travail s’inscrit dans une approche sobre, fidèle au texte, attentive au contexte et pensée pour accompagner le lecteur sans l’influencer.
             </p>
             <p className="mt-6 text-sm italic text-muted-foreground">

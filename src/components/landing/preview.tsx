@@ -22,12 +22,12 @@ export function Preview() {
           <h2 className="font-headline text-3xl md:text-4xl">
             Aperçu d’une séance
           </h2>
-          <p className="mt-4 text-base text-muted-foreground md:text-lg">
+          <p className="mt-4 text-base text-muted-foreground md:text-lg max-w-2xl mx-auto">
             Voici exactement ce que vous verrez. Simple, clair et sans distraction.
           </p>
         </div>
         <div className="mt-12 flow-root">
-          <div className="mx-auto max-w-3xl">
+          <div className="mx-auto max-w-xs sm:max-w-xl md:max-w-2xl lg:max-w-3xl">
             <Carousel
               opts={{
                 loop: true,
