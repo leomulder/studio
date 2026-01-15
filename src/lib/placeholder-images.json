@@ -31,10 +31,22 @@
       "imageHint": "portrait man"
     },
     {
-      "id": "preview-screenshot",
-      "description": "Screenshot of a study session in the app.",
-      "imageUrl": "https://i.postimg.cc/W48N9V42/Gray-Minimalist-New-Post-Instagram-Story.png",
+      "id": "preview-1",
+      "description": "Screenshot of a study session in the app, first view.",
+      "imageUrl": "https://i.postimg.cc/k4X044Rp/1.png",
       "imageHint": "app interface"
+    },
+    {
+      "id": "preview-2",
+      "description": "Screenshot of a study session in the app, second view.",
+      "imageUrl": "https://i.postimg.cc/ryd8Cnz1/2.png",
+      "imageHint": "app notes"
+    },
+    {
+      "id": "preview-3",
+      "description": "Screenshot of a study session in the app, third view.",
+      "imageUrl": "https://i.postimg.cc/NMZvztL6/3.png",
+      "imageHint": "app navigation"
     },
     {
       "id": "theologian-portrait",
