@@ -1,9 +1,9 @@
+"use client";
+
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
 import { Check, ShieldCheck, Lock, Rocket } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
-import { cn } from '@/lib/utils';
-import Link from 'next/link';
 
 const includedFeatures = [
   'Accès intégral aux Patriarches',
@@ -15,6 +15,15 @@ const includedFeatures = [
 ];
 
 export function Pricing() {
+  const handleCheckoutClick = (url: string) => {
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'InitiateCheckout');
+    }
+    setTimeout(() => {
+      window.location.href = url;
+    }, 500); // 500ms delay to ensure event is sent
+  };
+
   return (
     <section id="tarifs" className="py-16 sm:py-24 bg-secondary">
       <div className="container">
@@ -49,9 +58,13 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter>
-              <a href="https://pay.hotmart.com/X99498922F?off=0lf0vsdh&checkoutMode=10&utm_source=utmify" className="w-full">
-                <Button variant="outline" className="w-full">Choisir cette option</Button>
-              </a>
+              <Button 
+                variant="outline" 
+                className="w-full" 
+                onClick={() => handleCheckoutClick('https://pay.hotmart.com/X99498922F?off=0lf0vsdh&checkoutMode=10&utm_source=utmify')}
+              >
+                Choisir cette option
+              </Button>
             </CardFooter>
           </Card>
 
@@ -76,9 +89,12 @@ export function Pricing() {
               </ul>
             </CardContent>
             <CardFooter>
-              <a href="https://pay.hotmart.com/X99498922F?off=dmbffmon&checkoutMode=10&utm_source=utmify" className="w-full">
-                <Button className="w-full">Je choisis l'accès intégral</Button>
-              </a>
+              <Button 
+                className="w-full"
+                onClick={() => handleCheckoutClick('https://pay.hotmart.com/X99498922F?off=dmbffmon&checkoutMode=10&utm_source=utmify')}
+              >
+                Je choisis l'accès intégral
+              </Button>
             </CardFooter>
           </Card>
         </div>
