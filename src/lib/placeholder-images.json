@@ -63,25 +63,25 @@
     {
       "id": "isaac",
       "description": "Sober portrait of Isaac.",
-      "imageUrl": "https://images.unsplash.com/photo-1687628482232-98f714c0d590?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cG9ydHJhaXQlMjBkZXNlcnR8ZW58MHx8fHwxNzY4NTgwMjg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.postimg.cc/DypxtWJt/Gemini-Generated-Image-wu5trbwu5trbwu5t.png",
       "imageHint": "portrait desert"
     },
     {
       "id": "jacob",
       "description": "Sober portrait of Jacob.",
-      "imageUrl": "https://images.unsplash.com/photo-1567324216289-97cc4134f626?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwb3J0cmFpdCUyMG1hbnxlbnwwfHx8fDE3Njg0NzIzNTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.postimg.cc/cCHQmmcV/Gemini-Generated-Image-vnicecvnicecvnic.png",
       "imageHint": "portrait man"
     },
     {
       "id": "jeremie",
       "description": "Sober portrait of Jeremiah.",
-      "imageUrl": "https://images.unsplash.com/photo-1758270703516-163a63fd628e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwb3J0cmFpdCUyMHNjcm9sbHxlbnwwfHx8fDE3Njg1ODAyODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.postimg.cc/k45635tK/Gemini-Generated-Image-18muwq18muwq18mu.png",
       "imageHint": "portrait scroll"
     },
     {
       "id": "ezechiel",
       "description": "Sober portrait of Ezekiel.",
-      "imageUrl": "https://images.unsplash.com/photo-1631700026971-36f60c985c36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwb3J0cmFpdCUyMHZpc2lvbnxlbnwwfHx8fDE3Njg1ODAyODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.postimg.cc/3RWChhyK/Gemini-Generated-Image-ywp61nywp61nywp6.png",
       "imageHint": "portrait vision"
     }
   ]
