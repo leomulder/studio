@@ -24,7 +24,7 @@ export function Pricing() {
   };
 
   return (
-    <section id="tarifs" className="py-24 sm:py-32">
+    <section id="tarifs" className="py-24 sm:py-32 bg-secondary">
       <div className="container px-4">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl">
@@ -34,8 +34,8 @@ export function Pricing() {
             Prix accessible. Valeur clairement justifiée. Aucune pression artificielle.
           </p>
         </div>
-        <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start max-w-sm sm:max-w-4xl mx-auto">
-          <Card className="flex flex-col h-full border shadow-none">
+        <div className="mt-16 grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-start max-w-sm sm:max-w-4xl mx-auto">
+          <Card className="flex flex-col h-full shadow-none bg-background">
             <CardHeader>
               <CardTitle>Juste les Patriarches</CardTitle>
               <CardDescription>Pour commencer avec la Genèse et les pères de la foi.</CardDescription>
@@ -68,7 +68,7 @@ export function Pricing() {
             </CardFooter>
           </Card>
 
-          <Card className="flex flex-col h-full border-2 border-primary shadow-none">
+          <Card className="flex flex-col h-full border-primary shadow-lg bg-background">
             <CardHeader>
               <CardTitle>Accès intégral</CardTitle>
               <CardDescription>L'expérience complète pour une vision d'ensemble de l'Ancien Testament.</CardDescription>

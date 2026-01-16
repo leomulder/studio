@@ -4,7 +4,7 @@ export function Guarantee() {
   return (
     <section className="py-24 sm:py-32">
       <div className="container max-w-3xl px-4">
-        <Card className="bg-secondary border-none">
+        <Card className="bg-transparent border-none shadow-none">
           <CardContent className="p-8 sm:p-10 text-center">
              <h3 className="font-semibold text-lg">
               Garantie de satisfaction

@@ -18,7 +18,7 @@ export function Testimonials() {
       <div className="container px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-1 gap-8 md:grid-cols-3">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="border bg-background rounded-lg">
+            <Card key={index} className="border-0 bg-transparent shadow-none">
               <CardContent className="p-6">
                 <blockquote className="text-lg text-foreground italic text-center max-w-prose mx-auto">
                   “{testimonial.quote}”

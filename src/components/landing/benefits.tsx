@@ -8,7 +8,7 @@ const outcomes = [
 export function Benefits() {
   return (
     <section className="py-24 sm:py-32">
-      <div className="container max-w-prose mx-auto text-center px-4">
+      <div className="container max-w-2xl mx-auto text-center px-4">
         <h2 className="text-3xl md:text-4xl">
           Après avoir étudié ce contenu, vous serez capable de :
         </h2>
@@ -21,7 +21,7 @@ export function Benefits() {
             ))}
           </ul>
         </div>
-        <p className="mt-16 text-center font-headline text-2xl md:text-3xl text-muted-foreground max-w-full">
+        <p className="mt-16 text-center font-headline text-2xl md:text-3xl text-muted-foreground">
           Une transformation intellectuelle, rationnelle et durable.
         </p>
       </div>

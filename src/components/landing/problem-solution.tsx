@@ -17,10 +17,10 @@ const solutions = [
 
 export function ProblemSolution() {
   return (
-    <section className="py-24 sm:py-32">
+    <section className="py-24 sm:py-32 bg-secondary">
       <div className="container px-4">
         {/* Problem */}
-        <div className="text-center max-w-3xl mx-auto">
+        <div className="text-center max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-4xl">
             Lire la Bible n’est pas le problème. La comprendre l’est.
           </h2>
@@ -28,8 +28,8 @@ export function ProblemSolution() {
             Beaucoup de personnes lisent les textes bibliques, mais :
           </p>
         </div>
-        <div className="mt-8 max-w-md mx-auto">
-            <ul className="space-y-3">
+        <div className="mt-10 max-w-md mx-auto">
+            <ul className="space-y-4">
               {problems.map((problem) => (
                 <li key={problem} className="text-center text-muted-foreground text-lg">
                   {problem}
@@ -37,7 +37,7 @@ export function ProblemSolution() {
               ))}
             </ul>
         </div>
-        <p className="mt-10 text-center font-semibold text-xl max-w-xl mx-auto">
+        <p className="mt-12 text-center font-semibold text-xl max-w-xl mx-auto">
           Le problème n’est pas un manque de foi — c’est un manque de structure dans la manière d’étudier le texte.
         </p>
         

@@ -8,6 +8,12 @@ const benefits = [
   'De conserver l’ensemble du contenu en un seul endroit',
 ];
 
+const contrastPoints = [
+  'Des PDF trop longs',
+  'Des vidéos peu efficaces',
+  'Des plateformes complexes',
+]
+
 export function Preview() {
   const previewImage = PlaceHolderImages.find((img) => img.id === 'preview-1');
 
@@ -30,21 +36,35 @@ export function Preview() {
                 </li>
               ))}
             </ul>
+             <p className="mt-8 text-lg text-muted-foreground">
+              Contrairement à :
+            </p>
+             <ul className="mt-4 space-y-2">
+              {contrastPoints.map((point) => (
+                <li key={point} className="flex items-start text-lg text-muted-foreground/80">
+                   <span className="text-destructive/50 mr-3 mt-1">×</span>
+                   <span className="-ml-1">{point}</span>
+                </li>
+              ))}
+            </ul>
+
           </div>
           <div className="flex justify-center mt-12 lg:mt-0">
             {previewImage && (
-              <Image
-                src={previewImage.imageUrl}
-                alt={previewImage.description}
-                width={1200}
-                height={800}
-                className="rounded-lg border w-full h-auto"
-                data-ai-hint={previewImage.imageHint}
-              />
+              <div className="p-2 bg-gray-100 rounded-lg">
+                <Image
+                  src={previewImage.imageUrl}
+                  alt={previewImage.description}
+                  width={1200}
+                  height={800}
+                  className="rounded-md border w-full h-auto"
+                  data-ai-hint={previewImage.imageHint}
+                />
+              </div>
             )}
           </div>
         </div>
-        <p className="font-headline text-xl md:text-2xl text-center mt-24 max-w-full">
+        <p className="font-headline text-xl md:text-2xl text-center mt-32">
             Moins de distraction. Plus de compréhension.
         </p>
       </div>

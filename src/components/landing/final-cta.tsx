@@ -14,7 +14,7 @@ export function FinalCta() {
             </Button>
           </a>
         </div>
-        <p className="mt-6 text-sm text-muted-foreground max-w-full">
+        <p className="mt-6 text-sm text-muted-foreground">
           Méthode structurée • Accès immédiat • Étude à votre rythme
         </p>
       </div>
