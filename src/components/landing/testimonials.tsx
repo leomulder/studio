@@ -15,11 +15,11 @@ const testimonials = [
 export function Testimonials() {
   return (
     <section className="py-24 sm:py-32">
-      <div className="container">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+      <div className="container px-4">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 gap-8 md:grid-cols-3">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-transparent border-0 shadow-none">
-              <CardContent className="p-0">
+            <Card key={index} className="border bg-background rounded-lg">
+              <CardContent className="p-6">
                 <blockquote className="text-lg text-foreground italic text-center max-w-prose mx-auto">
                   “{testimonial.quote}”
                 </blockquote>

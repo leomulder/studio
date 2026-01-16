@@ -17,10 +17,10 @@ const solutions = [
 
 export function ProblemSolution() {
   return (
-    <section className="py-24 sm:py-32 bg-secondary">
-      <div className="container">
+    <section className="py-24 sm:py-32">
+      <div className="container px-4">
         {/* Problem */}
-        <div className="text-center max-w-prose mx-auto">
+        <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl">
             Lire la Bible n’est pas le problème. La comprendre l’est.
           </h2>
@@ -29,36 +29,36 @@ export function ProblemSolution() {
           </p>
         </div>
         <div className="mt-8 max-w-md mx-auto">
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               {problems.map((problem) => (
-                <li key={problem} className="text-center text-muted-foreground">
+                <li key={problem} className="text-center text-muted-foreground text-lg">
                   {problem}
                 </li>
               ))}
             </ul>
         </div>
-        <p className="mt-8 text-center font-semibold text-lg max-w-xl mx-auto">
+        <p className="mt-10 text-center font-semibold text-xl max-w-xl mx-auto">
           Le problème n’est pas un manque de foi — c’est un manque de structure dans la manière d’étudier le texte.
         </p>
         
         {/* Solution */}
-        <div className="mt-24 text-center max-w-prose mx-auto">
+        <div className="mt-24 text-center max-w-3xl mx-auto">
            <h3 className="text-3xl md:text-4xl">Une approche structurée, pas des interprétations dispersées</h3>
            <p className="mt-6 text-muted-foreground md:text-lg mx-auto">
             Ce contenu a été conçu pour offrir :
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-5xl mx-auto">
+        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 max-w-5xl mx-auto">
             {solutions.map((solution) => (
               <Card key={solution.text} className="bg-transparent border-0 shadow-none text-center">
                 <CardContent className="p-4 flex flex-col items-center justify-start h-full">
-                  <solution.icon className="h-8 w-8 text-primary/70 mb-4" />
-                  <p className="font-medium text-foreground">{solution.text}</p>
+                  <solution.icon className="size-7 text-primary/70 mb-4" />
+                  <p className="font-medium text-foreground text-lg">{solution.text}</p>
                 </CardContent>
               </Card>
             ))}
         </div>
-         <p className="mt-12 text-center font-semibold text-lg max-w-xl mx-auto">
+         <p className="mt-12 text-center font-semibold text-xl max-w-xl mx-auto">
             Ici, l’objectif n’est pas de convaincre — mais d’éclairer.
         </p>
       </div>

@@ -13,8 +13,8 @@ export function Preview() {
 
   return (
     <section className="py-24 sm:py-32">
-      <div className="container">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="container px-4">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div className="max-w-prose">
             <h2 className="text-3xl md:text-4xl">
               Un outil d’étude conçu pour le quotidien
@@ -31,14 +31,14 @@ export function Preview() {
               ))}
             </ul>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-12 lg:mt-0">
             {previewImage && (
               <Image
                 src={previewImage.imageUrl}
                 alt={previewImage.description}
                 width={1200}
                 height={800}
-                className="rounded-lg shadow-xl ring-1 ring-black/5 w-full h-auto"
+                className="rounded-lg border w-full h-auto"
                 data-ai-hint={previewImage.imageHint}
               />
             )}

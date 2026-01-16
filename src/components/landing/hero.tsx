@@ -2,8 +2,8 @@ import { Button } from '@/components/ui/button';
 
 export function Hero() {
   return (
-    <section className="flex items-center min-h-[90vh] py-24 sm:py-32">
-      <div className="container">
+    <section className="flex items-center min-h-[80vh] py-32 sm:py-40">
+      <div className="container px-4">
         <div className="max-w-[680px] text-left">
           <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
             Comprendre les Patriarches et les Prophètes
@@ -14,13 +14,13 @@ export function Hero() {
             Un contenu structuré pour celles et ceux qui souhaitent comprendre les textes bibliques, sans interprétations confuses, sans dépendance aux longues vidéos et sans langage dogmatique.
           </p>
 
-          <div className="mt-12">
+          <div className="mt-16">
             <a href="#tarifs">
               <Button size="lg" className="px-10 py-7 text-base sm:text-lg">Découvrir le contenu</Button>
             </a>
           </div>
           
-          <p className="mt-4 text-sm text-muted-foreground">Méthode structurée • Lecture progressive • Accès via application</p>
+          <p className="mt-6 text-sm text-muted-foreground">Méthode structurée • Lecture progressive • Accès via application</p>
         </div>
       </div>
     </section>

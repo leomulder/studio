@@ -24,9 +24,9 @@ export function Pricing() {
   };
 
   return (
-    <section id="tarifs" className="py-24 sm:py-32 bg-secondary">
-      <div className="container">
-        <div className="text-center max-w-prose mx-auto">
+    <section id="tarifs" className="py-24 sm:py-32">
+      <div className="container px-4">
+        <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl">
             Choisissez le format qui correspond à votre rythme
           </h2>
@@ -35,7 +35,7 @@ export function Pricing() {
           </p>
         </div>
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start max-w-sm sm:max-w-4xl mx-auto">
-          <Card className="flex flex-col h-full border-2 shadow-none">
+          <Card className="flex flex-col h-full border shadow-none">
             <CardHeader>
               <CardTitle>Juste les Patriarches</CardTitle>
               <CardDescription>Pour commencer avec la Genèse et les pères de la foi.</CardDescription>
@@ -45,7 +45,7 @@ export function Pricing() {
                 <span className="text-4xl font-bold tracking-tight">11,90€</span>
                 <span className="text-sm font-semibold leading-6 tracking-wide text-muted-foreground">Paiement unique</span>
               </div>
-              <ul className="mt-8 space-y-3 text-sm leading-6 text-muted-foreground">
+              <ul className="mt-8 space-y-4 text-sm leading-6 text-muted-foreground">
                 <li className="flex gap-x-3 items-center">
                   <Check className="h-5 w-5 flex-none text-primary/70" />
                   Accès intégral aux Patriarches
@@ -68,7 +68,7 @@ export function Pricing() {
             </CardFooter>
           </Card>
 
-          <Card className="flex flex-col h-full border-2 border-primary/50 shadow-none">
+          <Card className="flex flex-col h-full border-2 border-primary shadow-none">
             <CardHeader>
               <CardTitle>Accès intégral</CardTitle>
               <CardDescription>L'expérience complète pour une vision d'ensemble de l'Ancien Testament.</CardDescription>
@@ -78,7 +78,7 @@ export function Pricing() {
                 <span className="text-4xl font-bold tracking-tight">21,90€</span>
                 <span className="text-sm font-semibold leading-6 tracking-wide text-muted-foreground">Paiement unique</span>
               </div>
-              <ul className="mt-8 space-y-3 text-sm leading-6 text-foreground">
+              <ul className="mt-8 space-y-4 text-sm leading-6 text-foreground">
                 {includedFeatures.map((feature) => (
                   <li key={feature} className="flex gap-x-3 items-center">
                     <Check className="h-5 w-5 flex-none text-primary/70" />
