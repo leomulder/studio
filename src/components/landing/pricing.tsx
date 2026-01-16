@@ -18,9 +18,7 @@ export function Pricing() {
     if (typeof window !== 'undefined' && (window as any).fbq) {
       (window as any).fbq('track', 'InitiateCheckout');
     }
-    setTimeout(() => {
-      window.location.href = url;
-    }, 500);
+    window.location.href = url;
   };
 
   return (
