@@ -1,52 +1,34 @@
-import {
-  BookOpenCheck,
-  BookUser,
-  Hourglass,
-  Link as LinkIcon,
-  Sparkles,
-  PenSquare,
-} from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
-import type { LucideIcon } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 
-interface Benefit {
-  icon: LucideIcon;
-  text: string;
-}
-
-const benefits: Benefit[] = [
-  { icon: BookOpenCheck, text: 'Comprendre le fil du récit biblique' },
-  { icon: BookUser, text: 'Lire sans dépendre de sermons ou vidéos' },
-  { icon: Hourglass, text: 'Avancer à votre rythme, sans culpabilité' },
-  { icon: LinkIcon, text: 'Relier les textes entre eux' },
-  { icon: Sparkles, text: 'Gagner en clarté, sans jargon' },
-  { icon: PenSquare, text: 'Laisser une trace écrite de votre lecture' },
+const outcomes = [
+  'Lire les textes bibliques avec plus d’autonomie',
+  'Comprendre la chronologie et la logique des récits',
+  'Identifier clairement le rôle des patriarches et des prophètes',
+  'Étudier sans dépendre constamment de vidéos ou de tiers',
 ];
 
 export function Benefits() {
   return (
-    <section className="py-16 sm:py-24 bg-secondary">
-      <div className="container">
+    <section className="py-16 sm:py-24">
+      <div className="container max-w-3xl mx-auto">
         <div className="text-center">
           <h2 className="font-headline text-3xl md:text-4xl">
-            Ce que cette étude apporte
+            Après avoir étudié ce contenu, vous serez capable de :
           </h2>
-          <p className="mt-4 text-base text-muted-foreground md:text-lg max-w-2xl mx-auto">
-            Des bénéfices concrets pour une lecture renouvelée.
-          </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {benefits.map((benefit, index) => (
-            <a href="#tarifs" key={index} className="group">
-              <Card className="h-full transition-all duration-300 group-hover:bg-accent group-hover:shadow-lg">
-                <CardContent className="flex flex-col items-center justify-center p-6 text-center">
-                  <benefit.icon className="h-10 w-10 text-primary" />
-                  <p className="mt-4 font-medium">{benefit.text}</p>
-                </CardContent>
-              </Card>
-            </a>
-          ))}
+        <div className="mt-12">
+          <ul className="space-y-4">
+            {outcomes.map((outcome, index) => (
+               <li key={index} className="flex items-start text-lg md:text-xl">
+                  <CheckCircle2 className="h-6 w-6 mr-3 mt-1 shrink-0 text-primary" />
+                  <span className="text-foreground">{outcome}</span>
+                </li>
+            ))}
+          </ul>
         </div>
+        <p className="mt-12 text-center font-headline text-xl md:text-2xl text-muted-foreground">
+          Une transformation intellectuelle, rationnelle et durable.
+        </p>
       </div>
     </section>
   );

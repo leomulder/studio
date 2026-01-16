@@ -3,8 +3,6 @@ import { Authority } from '@/components/landing/authority';
 import { Benefits } from '@/components/landing/benefits';
 import { ProblemSolution } from '@/components/landing/problem-solution';
 import { Contents } from '@/components/landing/contents';
-import { BiblicalFigures } from '@/components/landing/biblical-figures';
-import { HowItWorks } from '@/components/landing/how-it-works';
 import { Preview } from '@/components/landing/preview';
 import { Pricing } from '@/components/landing/pricing';
 import { Guarantee } from '@/components/landing/guarantee';
@@ -20,16 +18,14 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <Authority />
-        <Benefits />
         <ProblemSolution />
+        <Authority />
         <Contents />
-        <BiblicalFigures />
-        <HowItWorks />
         <Preview />
+        <Benefits />
+        <Testimonials />
         <Pricing />
         <Guarantee />
-        <Testimonials />
         <Faq />
         <FinalCta />
       </main>

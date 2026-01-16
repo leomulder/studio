@@ -1,55 +1,35 @@
-import { FileText, AudioLines, NotebookPen, Laptop, Smartphone, Library } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
+import { CheckCircle2 } from 'lucide-react';
 
-const contents = [
-  {
-    icons: [FileText, AudioLines],
-    title: 'Texte + audio',
-    description: 'Lisez ou écoutez chaque étude, selon votre préférence.',
-  },
-  {
-    icons: [NotebookPen],
-    title: 'Notes personnelles',
-    description: 'Conservez vos réflexions directement dans l’interface.',
-  },
-  {
-    icons: [Laptop, Smartphone],
-    title: 'Accès multi-appareils',
-    description: 'Sur ordinateur, tablette ou téléphone.',
-  },
-  {
-    icons: [Library],
-    title: '+2 300 passages expliqués',
-    description: 'Une bibliothèque riche pour une compréhension profonde.',
-  },
+const features = [
+  'Contenu écrit, organisé par livres et chapitres',
+  'Explications directes et accessibles',
+  'Audios complémentaires pour approfondir la compréhension',
+  'Accès numérique sur plusieurs appareils',
 ];
 
 export function Contents() {
   return (
-    <section className="py-16 sm:py-24">
-      <div className="container">
-        <div className="text-center max-w-2xl mx-auto">
+    <section className="py-16 sm:py-24 bg-white">
+      <div className="container max-w-3xl mx-auto">
+        <div className="text-center">
           <h2 className="font-headline text-3xl md:text-4xl">
-            Ce que contient l’expérience
+            Ce que contient le programme
           </h2>
-          <p className="mt-4 text-base text-muted-foreground md:text-lg">
-            Un espace de lecture pensé pour durer, avec tous les outils nécessaires.
-          </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {contents.map((item, index) => (
-            <Card key={index} className="text-center">
-              <CardContent className="p-6">
-                <div className="flex justify-center items-center gap-2">
-                  {item.icons.map((Icon, i) => (
-                    <Icon key={i} className="h-8 w-8 text-primary" />
-                  ))}
-                </div>
-                <h3 className="mt-4 font-semibold text-lg">{item.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{item.description}</p>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="mt-12">
+           <ul className="space-y-4">
+              {features.map((feature) => (
+                <li key={feature} className="flex items-start text-lg md:text-xl">
+                  <CheckCircle2 className="h-6 w-6 mr-3 mt-1 shrink-0 text-primary" />
+                  <span className="text-foreground">{feature}</span>
+                </li>
+              ))}
+            </ul>
+        </div>
+        <div className="mt-12 text-center font-semibold text-muted-foreground text-lg">
+          <p>Sans excès de langage religieux.</p>
+          <p>Sans discours interminables.</p>
+          <p>Sans interprétations vagues.</p>
         </div>
       </div>
     </section>

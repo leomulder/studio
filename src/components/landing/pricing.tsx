@@ -29,10 +29,10 @@ export function Pricing() {
       <div className="container">
         <div className="text-center">
           <h2 className="font-headline text-3xl md:text-4xl">
-            Choisissez votre accès
+            Choisissez le format qui correspond à votre rythme
           </h2>
           <p className="mt-4 text-base text-muted-foreground md:text-lg max-w-2xl mx-auto">
-            Un investissement unique pour une compréhension qui dure toute une vie.
+            Prix accessible. Valeur clairement justifiée. Aucune pression artificielle.
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start max-w-sm sm:max-w-4xl mx-auto">
@@ -63,7 +63,7 @@ export function Pricing() {
                 className="w-full" 
                 onClick={() => handleCheckoutClick('https://pay.hotmart.com/X99498922F?off=0lf0vsdh&checkoutMode=10&utm_source=utmify')}
               >
-                Choisir cette option
+                Accéder au contenu
               </Button>
             </CardFooter>
           </Card>
@@ -93,7 +93,7 @@ export function Pricing() {
                 className="w-full"
                 onClick={() => handleCheckoutClick('https://pay.hotmart.com/X99498922F?off=dmbffmon&checkoutMode=10&utm_source=utmify')}
               >
-                Je choisis l'accès intégral
+                Accéder au contenu
               </Button>
             </CardFooter>
           </Card>

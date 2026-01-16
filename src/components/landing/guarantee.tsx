@@ -10,10 +10,10 @@ export function Guarantee() {
             <ShieldCheck className="h-12 w-12 shrink-0 text-primary" />
             <div>
               <h3 className="font-semibold text-lg">
-                Votre satisfaction est notre priorité
+                Garantie de satisfaction
               </h3>
               <p className="mt-1 text-muted-foreground">
-                Vous avez 15 jours pour découvrir en toute tranquillité. Un simple message suffit si ce n’est pas ce que vous cherchez, et nous vous remboursons intégralement.
+                Si le contenu ne correspond pas à la clarté et à la structure présentées, vous pouvez demander un remboursement dans le délai prévu. Simple et sans complication.
               </p>
             </div>
           </CardContent>
