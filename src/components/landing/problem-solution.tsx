@@ -1,5 +1,4 @@
-import { FileText, BarChart3, BookCheck, Lightbulb } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
+import { CircleCheck, CircleX } from 'lucide-react';
 
 const problems = [
   'Ne comprennent pas le contexte historique',
@@ -9,10 +8,10 @@ const problems = [
 ];
 
 const solutions = [
-  { text: 'Des explications claires', icon: FileText },
-  { text: 'Une organisation progressive', icon: BarChart3 },
-  { text: 'Une analyse verset par verset', icon: BookCheck },
-  { text: 'Une méthode favorisant une lecture autonome', icon: Lightbulb },
+  'Des explications claires',
+  'Une organisation progressive',
+  'Une analyse verset par verset',
+  'Une méthode favorisant une lecture autonome',
 ];
 
 export function ProblemSolution() {
@@ -20,24 +19,27 @@ export function ProblemSolution() {
     <section className="py-24 sm:py-32 bg-secondary">
       <div className="container px-4">
         {/* Problem */}
-        <div className="text-center max-w-2xl mx-auto">
+        <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl">
             Lire la Bible n’est pas le problème. La comprendre l’est.
           </h2>
           <p className="mt-6 text-muted-foreground md:text-lg mx-auto">
-            Beaucoup de personnes lisent les textes bibliques, mais :
+            Beaucoup de personnes lisent les textes bibliques, mais&nbsp;:
           </p>
         </div>
-        <div className="mt-10 max-w-md mx-auto">
+        
+        <div className="mt-12 max-w-lg mx-auto bg-background/50 p-8 rounded-lg border">
             <ul className="space-y-4">
               {problems.map((problem) => (
-                <li key={problem} className="text-center text-muted-foreground text-lg">
-                  {problem}
+                <li key={problem} className="flex items-start">
+                  <CircleX className="h-5 w-5 mr-3 mt-1 shrink-0 text-destructive/60" />
+                  <span className="text-base text-muted-foreground">{problem}</span>
                 </li>
               ))}
             </ul>
         </div>
-        <p className="mt-12 text-center font-semibold text-xl max-w-xl mx-auto">
+
+        <p className="mt-12 text-center font-semibold text-xl max-w-2xl mx-auto">
           Le problème n’est pas un manque de foi — c’est un manque de structure dans la manière d’étudier le texte.
         </p>
         
@@ -45,18 +47,19 @@ export function ProblemSolution() {
         <div className="mt-24 text-center max-w-3xl mx-auto">
            <h3 className="text-3xl md:text-4xl">Une approche structurée, pas des interprétations dispersées</h3>
            <p className="mt-6 text-muted-foreground md:text-lg mx-auto">
-            Ce contenu a été conçu pour offrir :
+            Ce contenu a été conçu pour offrir&nbsp;:
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 max-w-5xl mx-auto">
-            {solutions.map((solution) => (
-              <Card key={solution.text} className="bg-transparent border-0 shadow-none text-center">
-                <CardContent className="p-4 flex flex-col items-center justify-start h-full">
-                  <solution.icon className="size-7 text-primary/70 mb-4" />
-                  <p className="font-medium text-foreground text-lg">{solution.text}</p>
-                </CardContent>
-              </Card>
-            ))}
+
+        <div className="mt-12 max-w-lg mx-auto bg-background p-8 rounded-lg border border-primary/20 shadow-sm">
+            <ul className="space-y-4">
+              {solutions.map((solution) => (
+                <li key={solution} className="flex items-start">
+                  <CircleCheck className="h-5 w-5 mr-3 mt-1 shrink-0 text-primary" />
+                  <span className="text-base text-foreground">{solution}</span>
+                </li>
+              ))}
+            </ul>
         </div>
          <p className="mt-12 text-center font-semibold text-xl max-w-xl mx-auto">
             Ici, l’objectif n’est pas de convaincre — mais d’éclairer.
