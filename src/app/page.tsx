@@ -10,6 +10,7 @@ import { Testimonials } from '@/components/landing/testimonials';
 import { Faq } from '@/components/landing/faq';
 import { FinalCta } from '@/components/landing/final-cta';
 import { Footer } from '@/components/landing/footer';
+import { PatriarchsProphets } from '@/components/landing/patriarchs-prophets';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <ProblemSolution />
         <Authority />
+        <PatriarchsProphets />
         <Contents />
         <Preview />
         <Benefits />
