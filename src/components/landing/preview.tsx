@@ -19,45 +19,41 @@ export function Preview() {
   const previewImage = PlaceHolderImages.find((img) => img.id === 'preview-1');
 
   return (
-    <section className="py-16 sm:py-24 bg-white">
+    <section className="py-16 sm:py-24 bg-secondary/50">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="font-headline text-3xl md:text-4xl">
             Un outil d’étude conçu pour le quotidien
           </h2>
           <p className="mt-4 text-base text-muted-foreground md:text-lg">
-            Plutôt que des fichiers dispersés ou de longues vidéos, le contenu est organisé dans une application simple et fonctionnelle.
+            Plutôt que des fichiers dispersés ou de longues vidéos, le contenu est organisé dans une application simple et fonctionnelle, permettant :
           </p>
         </div>
         <div className="mt-12 grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div>
-              <h3 className="font-semibold text-lg mb-4">Permettant :</h3>
-              <ul className="space-y-2">
+              <ul className="space-y-3">
                 {benefits.map((benefit) => (
                   <li key={benefit} className="flex items-start">
                     <CheckCircle2 className="h-5 w-5 mr-3 mt-1 shrink-0 text-primary" />
-                    <span className="text-foreground">{benefit}</span>
+                    <span className="text-lg text-foreground">{benefit}</span>
                   </li>
                 ))}
               </ul>
             </div>
-            <div>
-              <h3 className="font-semibold text-lg mb-4">Contrairement à :</h3>
-              <ul className="space-y-2">
+            <div className="border-t pt-8">
+               <h3 className="font-semibold text-lg mb-4 text-center text-muted-foreground">Contrairement à :</h3>
+              <ul className="space-y-3">
                 {painPoints.map((point) => (
                   <li key={point} className="flex items-start">
                     <XCircle className="h-5 w-5 mr-3 mt-1 shrink-0 text-destructive/60" />
-                    <span className="text-muted-foreground">{point}</span>
+                    <span className="text-base text-muted-foreground">{point}</span>
                   </li>
                 ))}
               </ul>
             </div>
-             <p className="font-headline text-xl md:text-2xl text-center pt-4">
-              Moins de distraction. Plus de compréhension.
-            </p>
           </div>
-          <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
+          <div className="flex justify-center -m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
             {previewImage && (
               <Image
                 src={previewImage.imageUrl}
@@ -70,6 +66,9 @@ export function Preview() {
             )}
           </div>
         </div>
+        <p className="font-headline text-xl md:text-2xl text-center mt-16">
+            Moins de distraction. Plus de compréhension.
+        </p>
       </div>
     </section>
   );

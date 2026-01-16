@@ -14,17 +14,12 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="py-16 sm:py-24">
+    <section className="py-16 sm:py-24 bg-secondary/50">
       <div className="container">
-        <div className="text-center">
-          <h2 className="font-headline text-3xl md:text-4xl">
-            Ce qu’en pensent les lecteurs
-          </h2>
-        </div>
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
-            <Card key={index}>
-              <CardContent className="p-6 h-full flex items-center justify-center">
+            <Card key={index} className="bg-background">
+              <CardContent className="p-8 h-full flex items-center justify-center">
                 <blockquote className="text-lg text-foreground italic text-center">
                   “{testimonial.quote}”
                 </blockquote>

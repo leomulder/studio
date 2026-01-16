@@ -21,11 +21,11 @@ export function Pricing() {
     }
     setTimeout(() => {
       window.location.href = url;
-    }, 500); // 500ms delay to ensure event is sent
+    }, 500);
   };
 
   return (
-    <section id="tarifs" className="py-16 sm:py-24 bg-secondary">
+    <section id="tarifs" className="py-16 sm:py-24 bg-secondary/50">
       <div className="container">
         <div className="text-center">
           <h2 className="font-headline text-3xl md:text-4xl">
@@ -68,7 +68,7 @@ export function Pricing() {
             </CardFooter>
           </Card>
 
-          <Card className="relative flex flex-col h-full border-2 border-primary shadow-2xl lg:scale-105">
+          <Card className="relative flex flex-col h-full border-2 border-primary shadow-lg lg:scale-105">
             <Badge className="absolute -top-3 left-1/2 -translate-x-1/2">Recommandé</Badge>
             <CardHeader>
               <CardTitle>Accès intégral</CardTitle>

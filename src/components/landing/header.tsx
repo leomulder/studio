@@ -9,7 +9,7 @@ export function Header() {
           Paroles Claires
         </Link>
         <a href="#tarifs">
-          <Button>Découvrir le contenu</Button>
+          <Button variant="ghost">Découvrir le contenu</Button>
         </a>
       </div>
     </header>

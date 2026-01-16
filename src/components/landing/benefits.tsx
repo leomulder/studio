@@ -17,16 +17,16 @@ export function Benefits() {
           </h2>
         </div>
         <div className="mt-12">
-          <ul className="space-y-4">
+          <ul className="space-y-6">
             {outcomes.map((outcome, index) => (
                <li key={index} className="flex items-start text-lg md:text-xl">
-                  <CheckCircle2 className="h-6 w-6 mr-3 mt-1 shrink-0 text-primary" />
+                  <CheckCircle2 className="h-6 w-6 mr-4 mt-1 shrink-0 text-primary" />
                   <span className="text-foreground">{outcome}</span>
                 </li>
             ))}
           </ul>
         </div>
-        <p className="mt-12 text-center font-headline text-xl md:text-2xl text-muted-foreground">
+        <p className="mt-16 text-center font-headline text-xl md:text-2xl text-muted-foreground">
           Une transformation intellectuelle, rationnelle et durable.
         </p>
       </div>
