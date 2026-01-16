@@ -1,5 +1,3 @@
-import { CheckCircle2 } from 'lucide-react';
-
 const outcomes = [
   'Lire les textes bibliques avec plus d’autonomie',
   'Comprendre la chronologie et la logique des récits',
@@ -9,24 +7,21 @@ const outcomes = [
 
 export function Benefits() {
   return (
-    <section className="py-16 sm:py-24">
-      <div className="container max-w-3xl mx-auto">
-        <div className="text-center">
-          <h2 className="font-headline text-3xl md:text-4xl">
-            Après avoir étudié ce contenu, vous serez capable de :
-          </h2>
-        </div>
+    <section className="py-24 sm:py-32 bg-secondary">
+      <div className="container max-w-prose mx-auto text-center">
+        <h2 className="text-3xl md:text-4xl">
+          Après avoir étudié ce contenu, vous serez capable de :
+        </h2>
         <div className="mt-12">
           <ul className="space-y-6">
             {outcomes.map((outcome, index) => (
-               <li key={index} className="flex items-start text-lg md:text-xl">
-                  <CheckCircle2 className="h-6 w-6 mr-4 mt-1 shrink-0 text-primary" />
-                  <span className="text-foreground">{outcome}</span>
+               <li key={index} className="text-lg md:text-xl text-foreground mx-auto">
+                  {outcome}
                 </li>
             ))}
           </ul>
         </div>
-        <p className="mt-16 text-center font-headline text-xl md:text-2xl text-muted-foreground">
+        <p className="mt-16 text-center font-headline text-xl md:text-2xl text-muted-foreground max-w-full">
           Une transformation intellectuelle, rationnelle et durable.
         </p>
       </div>

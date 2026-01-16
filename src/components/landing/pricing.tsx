@@ -2,8 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
-import { Check, ShieldCheck, Lock, Rocket } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
+import { Check } from 'lucide-react';
 
 const includedFeatures = [
   'Accès intégral aux Patriarches',
@@ -25,18 +24,18 @@ export function Pricing() {
   };
 
   return (
-    <section id="tarifs" className="py-16 sm:py-24 bg-secondary/50">
+    <section id="tarifs" className="py-24 sm:py-32 bg-secondary">
       <div className="container">
-        <div className="text-center">
-          <h2 className="font-headline text-3xl md:text-4xl">
+        <div className="text-center max-w-prose mx-auto">
+          <h2 className="text-3xl md:text-4xl">
             Choisissez le format qui correspond à votre rythme
           </h2>
-          <p className="mt-4 text-base text-muted-foreground md:text-lg max-w-2xl mx-auto">
+          <p className="mt-4 text-muted-foreground md:text-lg">
             Prix accessible. Valeur clairement justifiée. Aucune pression artificielle.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start max-w-sm sm:max-w-4xl mx-auto">
-          <Card className="flex flex-col h-full">
+        <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start max-w-sm sm:max-w-4xl mx-auto">
+          <Card className="flex flex-col h-full border-2 shadow-none">
             <CardHeader>
               <CardTitle>Juste les Patriarches</CardTitle>
               <CardDescription>Pour commencer avec la Genèse et les pères de la foi.</CardDescription>
@@ -46,13 +45,13 @@ export function Pricing() {
                 <span className="text-4xl font-bold tracking-tight">11,90€</span>
                 <span className="text-sm font-semibold leading-6 tracking-wide text-muted-foreground">Paiement unique</span>
               </div>
-              <ul className="mt-6 space-y-3 text-sm leading-6 text-muted-foreground">
-                <li className="flex gap-x-3">
-                  <Check className="h-6 w-5 flex-none text-primary" />
+              <ul className="mt-8 space-y-3 text-sm leading-6 text-muted-foreground">
+                <li className="flex gap-x-3 items-center">
+                  <Check className="h-5 w-5 flex-none text-primary/70" />
                   Accès intégral aux Patriarches
                 </li>
-                <li className="flex gap-x-3">
-                  <Check className="h-6 w-5 flex-none text-primary" />
+                <li className="flex gap-x-3 items-center">
+                  <Check className="h-5 w-5 flex-none text-primary/70" />
                   Format texte seul
                 </li>
               </ul>
@@ -60,6 +59,7 @@ export function Pricing() {
             <CardFooter>
               <Button 
                 variant="outline" 
+                size="lg"
                 className="w-full" 
                 onClick={() => handleCheckoutClick('https://pay.hotmart.com/X99498922F?off=0lf0vsdh&checkoutMode=10&utm_source=utmify')}
               >
@@ -68,8 +68,7 @@ export function Pricing() {
             </CardFooter>
           </Card>
 
-          <Card className="relative flex flex-col h-full border-2 border-primary shadow-lg lg:scale-105">
-            <Badge className="absolute -top-3 left-1/2 -translate-x-1/2">Recommandé</Badge>
+          <Card className="flex flex-col h-full border-2 border-primary/50 shadow-none">
             <CardHeader>
               <CardTitle>Accès intégral</CardTitle>
               <CardDescription>L'expérience complète pour une vision d'ensemble de l'Ancien Testament.</CardDescription>
@@ -79,10 +78,10 @@ export function Pricing() {
                 <span className="text-4xl font-bold tracking-tight">21,90€</span>
                 <span className="text-sm font-semibold leading-6 tracking-wide text-muted-foreground">Paiement unique</span>
               </div>
-              <ul className="mt-6 space-y-3 text-sm leading-6 text-foreground">
+              <ul className="mt-8 space-y-3 text-sm leading-6 text-foreground">
                 {includedFeatures.map((feature) => (
-                  <li key={feature} className="flex gap-x-3">
-                    <Check className="h-6 w-5 flex-none text-primary" />
+                  <li key={feature} className="flex gap-x-3 items-center">
+                    <Check className="h-5 w-5 flex-none text-primary/70" />
                     {feature}
                   </li>
                 ))}
@@ -90,6 +89,7 @@ export function Pricing() {
             </CardContent>
             <CardFooter>
               <Button 
+                size="lg"
                 className="w-full"
                 onClick={() => handleCheckoutClick('https://pay.hotmart.com/X99498922F?off=dmbffmon&checkoutMode=10&utm_source=utmify')}
               >
@@ -97,20 +97,6 @@ export function Pricing() {
               </Button>
             </CardFooter>
           </Card>
-        </div>
-        <div className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-4 text-sm text-muted-foreground">
-          <div className="flex items-center gap-2">
-            <ShieldCheck className="h-4 w-4"/>
-            Garantie 15 jours
-          </div>
-          <div className="flex items-center gap-2">
-            <Lock className="h-4 w-4"/>
-            Paiement sécurisé
-          </div>
-           <div className="flex items-center gap-2">
-            <Rocket className="h-4 w-4"/>
-            Accès immédiat
-          </div>
         </div>
       </div>
     </section>

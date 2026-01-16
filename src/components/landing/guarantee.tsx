@@ -1,21 +1,17 @@
-import { ShieldCheck } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 export function Guarantee() {
   return (
-    <section className="pb-16 sm:pb-24">
+    <section className="py-24 sm:py-32">
       <div className="container max-w-3xl">
-        <Card className="bg-secondary/70 border-primary/20 border">
-          <CardContent className="flex flex-col items-center gap-6 p-8 text-center sm:flex-row sm:text-left">
-            <ShieldCheck className="h-16 w-16 shrink-0 text-primary" />
-            <div>
-              <h3 className="font-semibold text-lg">
-                Garantie de satisfaction
-              </h3>
-              <p className="mt-2 text-muted-foreground">
-                Si le contenu ne correspond pas à la clarté et à la structure présentées, vous pouvez demander un remboursement dans le délai prévu. Simple et sans complication.
-              </p>
-            </div>
+        <Card className="bg-transparent border-0 shadow-none">
+          <CardContent className="p-0 text-center">
+            <h3 className="font-semibold text-lg">
+              Garantie de satisfaction
+            </h3>
+            <p className="mt-2 text-muted-foreground max-w-prose mx-auto">
+              Si le contenu ne correspond pas à la clarté et à la structure présentées, vous pouvez demander un remboursement dans le délai prévu. Simple et sans complication.
+            </p>
           </CardContent>
         </Card>
       </div>
