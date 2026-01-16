@@ -20,10 +20,11 @@ export function ProblemSolution() {
       <div className="container px-4">
         {/* Problem */}
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl">
+          <h2 className="font-headline text-3xl md:text-4xl">
             Lire la Bible n’est pas le problème. La comprendre l’est.
           </h2>
-          <p className="mt-6 text-muted-foreground md:text-lg mx-auto">
+          <div className="mt-4 h-1 w-24 bg-primary/20 mx-auto"></div>
+          <p className="mt-8 text-muted-foreground md:text-lg mx-auto">
             Beaucoup de personnes lisent les textes bibliques, mais&nbsp;:
           </p>
         </div>
@@ -45,8 +46,9 @@ export function ProblemSolution() {
         
         {/* Solution */}
         <div className="mt-24 text-center max-w-3xl mx-auto">
-           <h3 className="text-3xl md:text-4xl">Une approche structurée, pas des interprétations dispersées</h3>
-           <p className="mt-6 text-muted-foreground md:text-lg mx-auto">
+           <h2 className="font-headline text-3xl md:text-4xl">Une approche structurée, pas des interprétations dispersées</h2>
+           <div className="mt-4 h-1 w-24 bg-primary/20 mx-auto"></div>
+           <p className="mt-8 text-muted-foreground md:text-lg mx-auto">
             Ce contenu a été conçu pour offrir&nbsp;:
           </p>
         </div>

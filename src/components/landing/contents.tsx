@@ -24,6 +24,7 @@ export function Contents() {
           <h2 className="font-headline text-3xl md:text-4xl">
             Ce que contient le programme
           </h2>
+          <div className="mt-4 h-1 w-24 bg-primary/20 mx-auto"></div>
         </div>
         <div className="mt-16 max-w-xl mx-auto">
             <ul className="space-y-10">

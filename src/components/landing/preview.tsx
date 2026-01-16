@@ -22,10 +22,11 @@ export function Preview() {
       <div className="container px-4">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div className="max-w-prose">
-            <h2 className="text-3xl md:text-4xl">
+            <h2 className="font-headline text-3xl md:text-4xl">
               Un outil d’étude conçu pour le quotidien
             </h2>
-            <p className="mt-6 text-lg text-muted-foreground">
+            <div className="mt-4 h-1 w-24 bg-primary/20"></div>
+            <p className="mt-8 text-lg text-muted-foreground">
               Plutôt que des fichiers dispersés ou de longues vidéos, le contenu est organisé dans une application simple et fonctionnelle, permettant :
             </p>
             <ul className="mt-8 space-y-4">

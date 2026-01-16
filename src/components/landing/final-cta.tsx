@@ -4,9 +4,10 @@ export function FinalCta() {
   return (
     <section className="py-24 sm:py-32">
       <div className="container text-center max-w-prose mx-auto px-4">
-        <h2 className="text-3xl md:text-5xl">
+        <h2 className="font-headline text-3xl md:text-5xl">
           Commencer mon étude maintenant
         </h2>
+        <div className="mt-4 h-1 w-24 bg-primary/20 mx-auto"></div>
         <div className="mt-10">
           <a href="#tarifs">
             <Button size="lg" className="px-10 py-7 text-base sm:text-lg">

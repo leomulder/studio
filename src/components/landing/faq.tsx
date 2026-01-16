@@ -46,6 +46,7 @@ export function Faq() {
           <h2 className="font-headline text-3xl md:text-4xl">
             Questions fréquentes
           </h2>
+          <div className="mt-4 h-1 w-24 bg-primary/20 mx-auto"></div>
         </div>
         <Accordion type="single" collapsible className="mt-12 w-full">
           {faqs.map((faq, index) => (

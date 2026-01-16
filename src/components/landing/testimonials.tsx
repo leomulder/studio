@@ -24,10 +24,11 @@ export function Testimonials() {
       <div className="container px-4">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="font-headline text-3xl md:text-4xl text-foreground">
-            Une transformation intellectuelle, rationnelle et durable.
+            Ce qu'en disent les lecteurs
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            Ce qu'en disent les premiers lecteurs :
+          <div className="mt-4 h-1 w-24 bg-primary/20 mx-auto"></div>
+          <p className="mt-8 text-lg text-muted-foreground">
+            Des retours authentiques de personnes qui utilisent l'étude.
           </p>
         </div>
 

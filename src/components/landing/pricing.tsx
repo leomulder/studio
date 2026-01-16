@@ -27,10 +27,11 @@ export function Pricing() {
     <section id="tarifs" className="py-24 sm:py-32 bg-secondary">
       <div className="container px-4">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl">
+          <h2 className="font-headline text-3xl md:text-4xl">
             Choisissez le format qui correspond à votre rythme
           </h2>
-          <p className="mt-4 text-muted-foreground md:text-lg">
+          <div className="mt-4 h-1 w-24 bg-primary/20 mx-auto"></div>
+          <p className="mt-8 text-muted-foreground md:text-lg">
             Prix accessible. Valeur clairement justifiée. Aucune pression artificielle.
           </p>
         </div>

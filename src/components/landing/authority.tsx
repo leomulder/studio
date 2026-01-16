@@ -15,7 +15,8 @@ export function Authority() {
           <h2 className="font-headline text-3xl md:text-4xl leading-tight text-foreground">
             Une approche sérieuse, pédagogique et structurée
           </h2>
-          <p className="mt-6 text-lg text-muted-foreground">
+          <div className="mt-4 h-1 w-24 bg-primary/20 mx-auto"></div>
+          <p className="mt-8 text-lg text-muted-foreground">
             Ce contenu repose sur une approche de lecture claire et progressive des textes bibliques, en mettant l’accent sur :
           </p>
         </div>
