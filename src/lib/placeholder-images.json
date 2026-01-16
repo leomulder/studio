@@ -53,6 +53,12 @@
       "description": "Portrait of Pr. Jean Dupont, theologian.",
       "imageUrl": "https://i.postimg.cc/KjCxKrZp/pastor.jpg",
       "imageHint": "theologian portrait"
+    },
+    {
+      "id": "hero-main-image",
+      "description": "Stylized image for the hero section, showing a book and a cross.",
+      "imageUrl": "https://i.postimg.cc/rmRWbm4y/Gemini-Generated-Image-fl4lq4fl4lq4fl4l-(1).png",
+      "imageHint": "book cross"
     }
   ]
 }
