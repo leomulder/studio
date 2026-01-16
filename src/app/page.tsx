@@ -9,13 +9,11 @@ import { Guarantee } from '@/components/landing/guarantee';
 import { Testimonials } from '@/components/landing/testimonials';
 import { Faq } from '@/components/landing/faq';
 import { FinalCta } from '@/components/landing/final-cta';
-import { Header } from '@/components/landing/header';
 import { Footer } from '@/components/landing/footer';
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
-      <Header />
       <main className="flex-1">
         <Hero />
         <ProblemSolution />
