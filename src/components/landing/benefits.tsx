@@ -21,9 +21,6 @@ export function Benefits() {
             ))}
           </ul>
         </div>
-        <p className="mt-16 text-center font-headline text-2xl md:text-3xl text-muted-foreground">
-          Une transformation intellectuelle, rationnelle et durable.
-        </p>
       </div>
     </section>
   );
