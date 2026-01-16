@@ -1,40 +1,60 @@
+import { Check } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
+
+const principles = [
+  'La cohérence textuelle',
+  'L’organisation historique',
+  'La clarté conceptuelle',
+  'Des explications accessibles, sans simplification excessive',
+];
+
 export function Authority() {
   return (
     <section className="py-24 sm:py-32">
-      <div className="container mx-auto max-w-4xl px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl leading-tight">
+      <div className="container mx-auto max-w-5xl px-4">
+        <div className="text-center mb-16 max-w-2xl mx-auto">
+          <h2 className="font-headline text-3xl md:text-4xl leading-tight text-foreground">
             Une approche sérieuse, pédagogique et structurée
           </h2>
         </div>
-        <div className="grid md:grid-cols-5 gap-12 items-start">
-          <div className="md:col-span-3">
-            <p className="text-lg text-muted-foreground max-w-prose">
+        <div className="grid md:grid-cols-2 gap-12 items-start">
+          {/* Left Column */}
+          <div className="max-w-prose">
+            <p className="text-lg text-muted-foreground">
               Ce contenu repose sur une approche de lecture claire et progressive des textes bibliques, en mettant l’accent sur :
             </p>
-            <ul className="mt-6 space-y-2">
-                <li className="text-lg text-foreground">La cohérence textuelle</li>
-                <li className="text-lg text-foreground">L’organisation historique</li>
-                <li className="text-lg text-foreground">La clarté conceptuelle</li>
-                <li className="text-lg text-foreground">Des explications accessibles, sans simplification excessive</li>
+            <ul className="mt-8 space-y-4">
+              {principles.map((item) => (
+                <li key={item} className="flex items-start">
+                  <Check className="h-5 w-5 text-primary/50 mr-3 mt-1 shrink-0" />
+                  <span className="text-lg text-foreground">{item}</span>
+                </li>
+              ))}
             </ul>
-            <p className="mt-6 text-lg text-muted-foreground max-w-prose">
+            <p className="mt-8 text-lg text-muted-foreground">
               L’objectif n’est pas d’imposer une interprétation, mais d’offrir des outils de compréhension, afin que chaque lecteur puisse construire son propre regard à partir du texte.
             </p>
           </div>
-          <div className="md:col-span-2 bg-card p-8 rounded-lg border">
-            <blockquote className="text-base text-foreground italic max-w-prose">
-              « Inspiré de méthodes académiques d’analyse et de lecture des textes, ce contenu suit une progression logique qui respecte le contexte, la chronologie des récits et l’intention originale des écrits. »
-            </blockquote>
-            <div className="mt-6 text-center font-semibold text-muted-foreground/80 text-sm">
-              <p className="max-w-full">Sans rhétorique.</p>
-              <p className="max-w-full">Sans exagération.</p>
-              <p className="max-w-full">Sans raccourci.</p>
-            </div>
+
+          {/* Right Column */}
+          <div className="mt-8 md:mt-0">
+             <Card className="bg-background/50 border-secondary-foreground/10 shadow-sm">
+                <CardContent className="p-8">
+                  <blockquote className="text-lg text-foreground italic max-w-prose">
+                    « Inspiré de méthodes académiques d’analyse et de lecture des textes, ce contenu suit une progression logique qui respecte le contexte, la chronologie des récits et l’intention originale des écrits. »
+                  </blockquote>
+                  <div className="mt-8 text-left space-y-1">
+                    <p className="text-base text-muted-foreground">Sans rhétorique.</p>
+                    <p className="text-base text-muted-foreground">Sans exagération.</p>
+                    <p className="text-base text-muted-foreground">Sans raccourci.</p>
+                  </div>
+                </CardContent>
+             </Card>
           </div>
         </div>
-        <div className="mt-20 text-center">
-            <p className="font-headline text-xl md:text-2xl max-w-prose mx-auto tracking-wide">
+        
+        <div className="mt-24 text-center">
+            <p className="font-headline text-2xl md:text-3xl max-w-prose mx-auto text-foreground">
               Comprendre un texte exige une méthode — pas seulement de la bonne volonté.
             </p>
         </div>
