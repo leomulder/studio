@@ -15,9 +15,6 @@ const includedFeatures = [
 
 export function Pricing() {
   const handleCheckoutClick = (url: string) => {
-    if (typeof window !== 'undefined' && (window as any).fbq) {
-      (window as any).fbq('track', 'InitiateCheckout');
-    }
     window.location.href = url;
   };
 
@@ -60,7 +57,7 @@ export function Pricing() {
                 variant="outline" 
                 size="lg"
                 className="w-full" 
-                onClick={() => handleCheckoutClick('https://pay.hotmart.com/X99498922F?off=0lf0vsdh&checkoutMode=10&utm_source=utmify')}
+                onClick={() => handleCheckoutClick('https://pay.hotmart.com/X99498922F?off=0lf0vsdh&checkoutMode=10')}
               >
                 Accéder au contenu
               </Button>
@@ -90,7 +87,7 @@ export function Pricing() {
               <Button 
                 size="lg"
                 className="w-full"
-                onClick={() => handleCheckoutClick('https://pay.hotmart.com/X99498922F?off=dmbffmon&checkoutMode=10&utm_source=utmify')}
+                onClick={() => handleCheckoutClick('https://pay.hotmart.com/X99498922F?off=dmbffmon&checkoutMode=10')}
               >
                 Accéder au contenu
               </Button>

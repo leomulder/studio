@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Script from 'next/script';
 import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
 import { cn } from '@/lib/utils';
@@ -31,23 +30,6 @@ export default function RootLayout({
   return (
     <html lang="fr" className={cn('!scroll-smooth', playfairDisplay.variable, ptSans.variable)}>
       <head>
-        <Script id="utmify-pixel-config" strategy="afterInteractive">
-          {`window.pixelId = "6968210716f60bda1549eed9";`}
-        </Script>
-        <Script
-          id="utmify-pixel-script"
-          src="https://cdn.utmify.com.br/scripts/pixel/pixel.js"
-          strategy="afterInteractive"
-          async
-        />
-        <Script
-          id="utmify-utms-script"
-          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-          data-utmify-prevent-xcod-sck
-          data-utmify-prevent-subids
-          strategy="afterInteractive"
-          async
-        />
       </head>
       <body className={cn('font-body antialiased')}>
         {children}
