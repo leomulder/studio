@@ -15,7 +15,16 @@ const includedFeatures = [
 
 export function Pricing() {
   const handleCheckoutClick = (url: string) => {
-    window.location.href = url;
+    const search = window.location.search;
+    let finalUrl = url;
+    if (search) {
+      if (url.includes('?')) {
+        finalUrl = `${url}&${search.substring(1)}`;
+      } else {
+        finalUrl = `${url}${search}`;
+      }
+    }
+    window.location.href = finalUrl;
   };
 
   return (
