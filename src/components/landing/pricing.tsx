@@ -14,19 +14,6 @@ const includedFeatures = [
 ];
 
 export function Pricing() {
-  const handleCheckoutClick = (url: string) => {
-    const search = window.location.search;
-    let finalUrl = url;
-    if (search) {
-      if (url.includes('?')) {
-        finalUrl = `${url}&${search.substring(1)}`;
-      } else {
-        finalUrl = `${url}${search}`;
-      }
-    }
-    window.location.href = finalUrl;
-  };
-
   return (
     <section id="tarifs" className="py-24 sm:py-32 bg-secondary">
       <div className="container px-4">
@@ -66,7 +53,7 @@ export function Pricing() {
                 variant="outline" 
                 size="lg"
                 className="w-full" 
-                onClick={() => handleCheckoutClick('https://pay.hotmart.com/X99498922F?off=0lf0vsdh&checkoutMode=10')}
+                onClick={() => window.location.href = 'https://pay.hotmart.com/X99498922F?off=0lf0vsdh&checkoutMode=10'}
               >
                 Accéder au contenu
               </Button>
@@ -96,7 +83,7 @@ export function Pricing() {
               <Button 
                 size="lg"
                 className="w-full"
-                onClick={() => handleCheckoutClick('https://pay.hotmart.com/X99498922F?off=dmbffmon&checkoutMode=10')}
+                onClick={() => window.location.href = 'https://pay.hotmart.com/X99498922F?off=dmbffmon&checkoutMode=10'}
               >
                 Accéder au contenu
               </Button>
